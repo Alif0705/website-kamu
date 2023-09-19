@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+ <div id="root">
+    <input type="text" placeholder="username" id="usernameInput">
+    <input type="password" placeholder="password" id="passwordInput">
+    <button onclick="onLogin()">Login</button>
+ </div>
+
+    <div class="container" id="love">
+        <span>I</span>
+        <span>&nbsp</span>
+        <span>L</span>
+        <span>O</span>
+        <span>V </span>
+        <span>E</span>
+        <span>&nbsp</span>
+        <span>Y</span>
+        <span>O</span>
+        <span>U</span>
+        <span>&nbsp</span>
+        <span>&#9829</span>
+  </div>
+  <div id="no">
+    ga ada
+  </div>
+        <script type="application/javascript">
+        let usernameInput = document.getElementById('usernameInput')
+        let passwordInput = document.getElementById('passwordInput')
+        let love          = document.getElementById('love')
+        let no        = document.getElementById('no')
+        
+
+         
+        love.style.display ="none"
+        no.style.display = "none"
+        function onLogin(){
+            console.log('tombol login di click')
+            console.log(usernameInput.value)
+            console.log(passwordInput.value)
+            if(usernameInput.value == "Rifana" && passwordInput.value == "240305"){
+               alert('alooo mbak pacar')
+               love.style.display ="block"
+               root.style.display="none"
+            } else{
+                alert('bukan pacar aku km')
+                no.style.display ="block"
+                root.style.display="none"
+            }
+        }
+        </script>
+</body>
+</html>
